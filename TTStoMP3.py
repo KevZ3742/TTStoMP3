@@ -16,7 +16,7 @@ engine.runAndWait()
 
 source = "(" + str(num) + ") " + name + ".mp3"
 # Change this to your desired save location
-destination = "C:\\Users\\User\\Videos\\"
+destination = "C:\\Users\\Kevin Zhang\\Videos\\TTS\\"
 
 def moveFile():
     try:
