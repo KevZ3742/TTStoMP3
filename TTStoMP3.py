@@ -35,6 +35,9 @@ def moveFile():
                 print(source + " was moved")
             elif(action == "q"):
                 exit()
+            else:
+                print("Invalid input")
+                exit()
         else:
             os.replace(source, destination + source)
             print(source + " was moved")
