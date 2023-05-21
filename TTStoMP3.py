@@ -5,7 +5,7 @@ engine = pyttsx3.init()
 
 num = 1
 name = "tts"
-string = "hello world"
+string = "ENTER YOUR STRING"
 
 engine.save_to_file(string, "(" + str(num) + ") " + name + ".mp3")
 engine.runAndWait()
