@@ -3,15 +3,20 @@ import os
 
 engine = pyttsx3.init()
 
+# Dont touch, this var deals with duplicate names
 num = 1
+# Change this to your desired name
 name = "tts"
+
+# Changed this to yout desired output
 string = "ENTER YOUR STRING"
 
 engine.save_to_file(string, "(" + str(num) + ") " + name + ".mp3")
 engine.runAndWait()
 
 source = "(" + str(num) + ") " + name + ".mp3"
-destination = "C:\\Users\\Kevin Zhang\\Videos\\TTS\\"
+# Change this to your desired save location
+destination = "C:\\Users\\User\\Videos\\"
 
 def moveFile():
     try:
@@ -36,6 +41,7 @@ def moveFile():
     except FileNotFoundError:
         print(source + " was not found")
 
+# Checks if a path exists
 def checkExists(index):
     path = destination + "(" + str(index) + ") " + name + ".mp3"
     if(os.path.exists(path)):
